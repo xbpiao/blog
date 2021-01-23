@@ -6,7 +6,7 @@ categories: jekyll
 ---
 
 # 一、前言
-  [jekyll](https://jekyllrb.com) 环境第一个是在MatePad Pro上搭的（[Termux](https://play.google.com/store/apps/details?id=com.termux) + [Acode](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) + [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome)）,整个安装过程非常顺利所以记录。目前所有有键盘的设备都可以markdown写起来！！！！
+  [jekyll](https://jekyllrb.com) 环境第一个是在MatePad Pro上搭的（[Termux](https://play.google.com/store/apps/details?id=com.termux) + [Acode](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) + [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome)）,整个安装过程非常顺利所以没记录。目前所有有键盘的设备都可以markdown写起来！！！！
 
   ![matepadpro_jekyll](/blog/assets/images/2021-01-23-Win10-jekyll-error/matepadpro_jekyll.jpg)
 
