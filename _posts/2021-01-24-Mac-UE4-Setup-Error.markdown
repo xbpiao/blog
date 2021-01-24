@@ -9,7 +9,25 @@ typora-root-url: ..\..
 
 # 一、环境
 
-macOS、UE4.26源码编译。
+macOS、UE4.26源码编译(之前的版本没问题，近期的才需要这么干)
+
+```sh
+xbpiao@192 UnrealEngine % git branch
+  4.25
+  4.25-plus
+* 4.26
+  release
+xbpiao@192 UnrealEngine % git log
+commit 422429a318fc3732b92b7eded62819838a2d8a4a (HEAD -> 4.26, origin/4.26)
+Author: Rolando Caloca <Rolando.Caloca@epicgames.com>
+Date:   Fri Jan 22 12:35:11 2021 -0500
+
+    UE4.26 - Fix for imageview handles deleted still bound on framebuffers
+    #rb Brandon.Schaefer, Mihnea.Balta
+    #jira UE-105058
+    
+    [CL 15165078 by Rolando Caloca in 4.26 branch]
+```
 
 # 二、问题记录
 
