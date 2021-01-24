@@ -3,12 +3,13 @@ layout: post
 title:  "Win10下跑jekyll问题记录"
 date:   2021-01-23 21:43:18 +0800
 categories: jekyll
+typora-root-url: ..\..
 ---
 
 # 一、前言
-  [jekyll](https://jekyllrb.com) 环境第一个是在[MatePad Pro](https://www.vmall.com/product/10086663107289.html)（一台Android设备）上搭的（[Termux](https://play.google.com/store/apps/details?id=com.termux) + [Acode](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) + [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome)）,整个安装过程非常顺利所以没记录。为了随时可以写Blog,目前所有有键盘的设备都环境都准备好！！！！
+  [jekyll](https://jekyllrb.com) 环境第一个是在[MatePad Pro](https://www.vmall.com/product/10086663107289.html)（一台Android设备）上搭的（[Termux](https://play.google.com/store/apps/details?id=com.termux) + [Acode](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) + [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome)）,整个安装过程非常顺利所以没记录。为了随时可以写Blog,目前所有有键盘的设备都环境都准备好！！！！  
 
-  ![matepadpro_jekyll](/blog/assets/images/2021-01-23-Win10-jekyll-error/matepadpro_jekyll.jpg)
+![matepadpro_jekyll](/blog/assets/images/2021-01-23-Win10-jekyll-error/matepadpro_jekyll.jpg)
 
 # 二、问题记录
 
