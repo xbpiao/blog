@@ -8,12 +8,12 @@ typora-root-url: ..\..
 
 # 一、开发环境
 
-	* macOSX Big Sur
-	* UE4.26.1 Source
-	* [UnLua + Lua5.3.6](https://github.com/xbpiao/UnLua/tree/Upgrade_to_Lua5.3.6)
-	* VSCode1.53.0 + EmmyLua0.3.49
+* macOSX Big Sur
+* UE4.26.1 Source
+* [UnLua + Lua5.3.6](https://github.com/xbpiao/UnLua/tree/Upgrade_to_Lua5.3.6)
+* VSCode1.53.0 + EmmyLua0.3.49
 
-参考：https://github.com/EmmyLua/VSCode-EmmyLua/issues/58 配置
+参考：[https://github.com/EmmyLua/VSCode-EmmyLua/issues/58](https://github.com/EmmyLua/VSCode-EmmyLua/issues/58) 配置
 
 emmylua_new supports Windows/Mac/Linux platform.
 step1: insert that code to main file
@@ -78,17 +78,17 @@ vscode EmmyLual默认配置：
 }
 ```
 
-但调试 UE4.26.1 + UnLua 一断点UE4Editor就crash，官方的https://github.com/Tencent/UnLua 就可以重现。
+但调试 UE4.26.1 + UnLua 一断点UE4Editor就crash，官方的[https://github.com/Tencent/UnLua](https://github.com/Tencent/UnLua) 就可以重现。
 
 # 三、问题原因
 
-感谢开源的https://github.com/EmmyLua/EmmyLuaDebugger 直接Debug调试一波。
+感谢开源的 [https://github.com/EmmyLua/EmmyLuaDebugger](https://github.com/EmmyLua/EmmyLuaDebugger) 直接Debug调试一波。
 发现 ** Debugger::GetVariable ** 无限循环递归堆栈溢出导致的crash
-https://github.com/xbpiao/EmmyLuaDebugger/blob/c37ede5580c7b5654feb735c73659ba99bf9d792/emmy_core/emmy_debugger.cpp#L242
+[https://github.com/xbpiao/EmmyLuaDebugger/blob/c37ede5580c7b5654feb735c73659ba99bf9d792/emmy_core/emmy_debugger.cpp#L242](https://github.com/xbpiao/EmmyLuaDebugger/blob/c37ede5580c7b5654feb735c73659ba99bf9d792/emmy_core/emmy_debugger.cpp#L242)
 
 临时解决就是限制递归次数，大过年的临时限制188次
 
-https://github.com/xbpiao/EmmyLuaDebugger/tree/fix_DebuggerGetVariable_Infinite_loop
+[https://github.com/xbpiao/EmmyLuaDebugger/tree/fix_DebuggerGetVariable_Infinite_loop](https://github.com/xbpiao/EmmyLuaDebugger/tree/fix_DebuggerGetVariable_Infinite_loop)
 
 ```c++
 #ifndef EMMY_CORE_GETVARIABLE_LIMIT
