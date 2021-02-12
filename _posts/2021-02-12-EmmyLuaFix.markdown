@@ -96,7 +96,7 @@ vscode EmmyLual默认配置：
 #endif
 ```
 
-简单看了下是UObject -> ParentClass -> UObject 无限转下去喽！
+简单看了下是UObject -> ParentClass -> metatable -> metatable 无限转下去喽！
 
 由于是临时方案暂不提交 **PR** ，有空再测试Windows平台找到较完美的方案再说。
 
