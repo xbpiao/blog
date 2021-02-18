@@ -8,7 +8,7 @@ typora-root-url: ..\..
 
 # 一、开发环境
 
-* macOSX Big Sur
+* macOS Big Sur （11.1）
 * UE4.26.1 Source
 * [UnLua + Lua5.3.6](https://github.com/xbpiao/UnLua/tree/Upgrade_to_Lua5.3.6)
 * VSCode1.53.0 + EmmyLua0.3.49
@@ -83,7 +83,7 @@ vscode EmmyLual默认配置：
 # 三、问题原因
 
 感谢开源的 [https://github.com/EmmyLua/EmmyLuaDebugger](https://github.com/EmmyLua/EmmyLuaDebugger) 直接Debug调试一波。
-发现 ** Debugger::GetVariable ** 无限循环递归堆栈溢出导致的crash
+发现 **Debugger::GetVariable** 无限循环递归堆栈溢出导致的crash
 [https://github.com/xbpiao/EmmyLuaDebugger/blob/c37ede5580c7b5654feb735c73659ba99bf9d792/emmy_core/emmy_debugger.cpp#L242](https://github.com/xbpiao/EmmyLuaDebugger/blob/c37ede5580c7b5654feb735c73659ba99bf9d792/emmy_core/emmy_debugger.cpp#L242)
 
 临时解决就是限制递归次数，大过年的临时限制188次
